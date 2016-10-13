@@ -24,7 +24,7 @@ public class JedisConnectionPool {
                 System.out.println("----- jedis 신규연결 -----");
                 // ManagementFactory 안드로이드엔 없음
                 // 안드로이드 시스템에서는 굳이 pool 을 만들 필요가 없어서 그냥 컨넥션만 맺는다.
-                jedisPool = new Jedis("175.126.74.86");
+                jedisPool = new Jedis("localhost");
             }else{
                 System.out.println("----- jedis 이미연결되었음 -----");
             }

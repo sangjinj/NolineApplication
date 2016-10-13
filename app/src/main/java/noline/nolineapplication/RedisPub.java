@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
  * Created by sangjin on 2016-10-11.
  */
 public class RedisPub implements Runnable {
-    Jedis jedis = new Jedis("175.126.74.86");
+    Jedis jedis = new Jedis("localhost");
     boolean isRunning;
     private String channel, msg;
     public RedisPub(String channel, String msg){
